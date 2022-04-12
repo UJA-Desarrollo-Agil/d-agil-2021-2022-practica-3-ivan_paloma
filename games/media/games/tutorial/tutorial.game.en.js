@@ -16,31 +16,27 @@ undum.game.id = "b8641640-99ff-11ec-8bc2-0800200c9a66"; // GEnerado por http://w
 undum.game.version = "1.0";
 
 // En modo depuración, que no haya efectos de jquery
-jQuery.fx.off=false
+jQuery.fx.off = false
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-		"<h1>Praga</h1>\
+        "<h1>Praga</h1>\
         <p> Te acabas de despertar en un callejón de la encantadora ciudad de Praga, aún desconocido para ti. Allí, una luz extraña se muestra ante tu presencia.\
         Tú, aún sufriendo las consecuencias de la noche anterior, no puedes evitar sentirte atraído por ella y decides acercarte. \
         El misterio no para de acrecentarse cuando en latín pone en la puerta de donde nace la luz cegadora: \
-        <br><i><center>Sed fugit interea, fugit irreparabile tempus.</center></i></br>\
-        Una pena que te saltaras las clases de latín, corre y \
-        <a href='./googlear'> googlealo. </a>\
-        </p>", {
-        
-            actions: {
-                googlear: function(character, system, action) { 
-                   // window.open("https://translate.google.com/?hl=es&sl=la&tl=es&text=Sed%20fugit%20interea%2C%20fugit%20irreparabile%20tempus&op=translate", "_blank");
-                    system.doLink("llaves");
-                }
+        <br><i><center>Sed fugit interea, fugit irreparabile tempus.</center></i></br></p>\
+        <p>Una pena que te saltaras las clases de latín, corre y <a href='./googlear'>googlealo.</a></p>", {
+
+        actions: {
+            googlear: function (character, system, action) {
+                window.open("https://translate.google.com/?hl=es&sl=la&tl=es&text=Sed%20fugit%20interea%2C%20fugit%20irreparabile%20tempus&op=translate", "_blank");
+                system.doLink("llaves");
             }
         }
+    }
 
     ),
-
-
 
     llaves: new undum.SimpleSituation(
         "<h1>LLaves</h1>\
@@ -49,7 +45,7 @@ undum.game.situations = {
         Ve a buscar la llave a <a href='torrepolvora'> la Torre de la Pólvora</a> o <a href='museolego'> al museo Lego. </a> \
         </p>"
     ),
-    
+
     torrepolvora: new undum.SimpleSituation(
         "<h1>Torre de la Pólvora</h1>\
         <p> Te encuentras en la Torre de la Pólvora, una de las más grandes de la ciudad. \
