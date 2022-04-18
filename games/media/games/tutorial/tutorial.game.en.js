@@ -71,8 +71,22 @@ undum.game.situations = {
         "<h1>Mirar Detalladamente</h1>\
         <p> Sabia decisión la de mirar detalladamente ha sido. Tras una larga y agotadora busqueda, descubres un brillo desentonando entre el admirado \
         <i>Halcón Milenario</i>. ¡Sí! Es la llave, lo conseguiste. Tus increíbles dotes de detective y tu incansable lucha te han abierto el portal para descubrir el universo.\
-        <a href='portal'> coge la llave y ve al portal. </a>\
-        </p>"
+        <a href='./llave'>coge la llave </a> y  <a href='./entrar'> ve al portal. </a>\
+        </p>", {
+        actions: {
+            'llave': function (character, system, action) {
+                system.setQuality("llave", true);
+            },
+            'entrar': function (character, system, action) {
+                if (character.qualities.llave) {
+                    system.doLink("portal");
+                } else {
+                    system.write("<p>Te has olvidado de coger la llave, cógela y ve hacia el portal</p>");
+                }
+            }
+
+        }
+    }
     ),
 
     portal: new undum.SimpleSituation(
@@ -84,7 +98,7 @@ undum.game.situations = {
         <li><a href='edadmedia'> Edad Media </a></li>\
         <li><a href='edadmoderna'> Edad Moderna </a></li>\
         <li><a href='edadcontemporanea'> Edad Contemporanea </a></li>\ </p>"
-        
+
     ),
 
     portalaux: new undum.SimpleSituation(
@@ -96,11 +110,11 @@ undum.game.situations = {
         <li><a href='edadmedia'> Edad Media </a></li>\
         <li><a href='edadmoderna'> Edad Moderna </a></li>\
         <li><a href='edadcontemporanea'> Edad Contemporanea </a></li>\ </p>"
-    
+
     ),
 
     eramesozoica: new undum.SimpleSituation(
-       "<h1>Era Mesozoica</h1>\
+        "<h1>Era Mesozoica</h1>\
        <p>Has escogido conocer a los dinosaurios, una vez allí, quedas encantado con el paisaje aún sin contaminación y la forma de vida de estos animales.\
        Tristemente, sabes que en unos años morirán debido al meteorito que impactó contra el planeta Tierra, dejando una atmósfera contaminada y un cráter denominado Chicxulub.\
        No puedes evitar pensar en lo trágico que eso sería, y en un arrebato de adrenalina, decides tomar un pequeño grupo de velocirraptores bebés y llevarlos al futuro, evitando así su total extinción.\
@@ -117,7 +131,7 @@ undum.game.situations = {
         Estos homínidos resultan ser los Homo Floresiensis, también conocidos por parecer hobbits. Aunque tenian una peculiaridad reseñable, vivían en sociedad y se alimentaban de las flores allí nacidas,\
         igual es por esto que su tamaño no pasaba de un metro de altura y 25 kilogramos de peso. ¡Has descubierto que parte de nuestros antepasados homínidos eran veganos!.\
         <a href='portalaux'> Vuelve al portal. </a></p>"
-    
+
     ),
 
     edadantigua: new undum.SimpleSituation(
@@ -130,7 +144,7 @@ undum.game.situations = {
         Has decidido llevarle vodka, Alejandro no puede estar más agradecido, admiró tanto ese brebaje que no supo cuando cesar de beber. Fue la biología la que le hizo parar, concretamente su corazón.\
         Mataste a Alejandro Magno, en consecuencia el vodka se considera una droga ilegal en todo el mundo. ¿De dónde salieron pues las botellas que el hegemón de Grecia bebió?\
         <a href='portalaux'> Vuelve al portal. </a></p>"
-    
+
     ),
 
     edadmedia: new undum.SimpleSituation(
@@ -163,9 +177,22 @@ undum.game.situations = {
           Por tu culpa los soldados recordaron sus misiones y volvieron a sus trincheras, acabaste con un precioso momento.\
         <a href='portalaux'> Vuelve al portal. </a></p>"
     )
-    
+
 };
 
 undum.game.start = "start";
 
+undum.game.qualities = {
+    llave: new undum.OnOffQuality(
+        "Llave", { priority: "0001", group: 'inventario' }
+    )
+};
 
+undum.game.qualityGroups = {
+    inventario: new undum.QualityGroup('Inventario', { priority: "0001" })
+};
+
+undum.game.init = function (character, system) {
+    system.setQuality("llave", false)
+    system.setCharacterText("<p>¡Comienzas tu fascinante aventura!</p>");
+};
