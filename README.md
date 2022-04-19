@@ -1,5 +1,5 @@
 
-# Práctica 2 Desarrollo Ágil
+# Práctica 3 Desarrollo Ágil
 
 # Autor
 * Paloma Torres Higueras - pth00005@red.ujaen.es
@@ -73,11 +73,14 @@ La URL del tablero es: https://trello.com/b/810nSWvK/pr%C3%A1ctica-3
 ## Capturas Trello del primer sprint
 
 ### Inicial con las Historias de Usuario escogidas
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu_sprint.png" alt="cap1" style="max-width: 100%;">
 Aquellas historias de usuario cuyo valor corresponde a "🥵", han sido escogidas simplemente por ser de un valor innegociable para el cliente. Siendo estas estrictamente necesarias para presentarle el producto al usuario. Las historias: 9, 10 y 11 han sido implementadas en este sprint porque daban valor al resto del juego y lo complementaban muy bien. 
 ### HU tras el Sprint Refinement
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/refinement.png" alt="cap1" style="max-width: 100%;">
 ### Captura final
-
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/final.png" alt="cap1" style="max-width: 100%;">
 ## Sprint Review
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/tabla.png" alt="cap1" style="max-width: 100%;">
 En este sprint hemos conseguido implementar todas las historias de usuario propuestas, aunque el tiempo no ha estado perfectamente repartido a lo largo de las semanas. No obstante, logramos implementar las historias de usuario 9, 10 y 11 que a pesar de dar un gran valor al producto, no eran innegociables. 
 Con respecto al Sprint Refinement, tuvimos que contar con una nueva historia de usuario urgente e innegociable para el cliente, que ciertamente, no costó mucho esfuerzo realizar.
 De cara al segundo sprint planeanos acabar las historias de usuario restantes del product backlog y mejorar la estética y de ser necesario, alguna escena.
