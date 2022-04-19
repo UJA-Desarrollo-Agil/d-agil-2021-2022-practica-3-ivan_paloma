@@ -18,6 +18,11 @@ undum.game.version = "1.0";
 // En modo depuración, que no haya efectos de jquery
 jQuery.fx.off = false
 
+var numEdades = 6;
+var visitado = new Array(numEdades).fill(false);
+
+var cont = 0;
+
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
@@ -31,6 +36,7 @@ undum.game.situations = {
 
         actions: {
             googlear: function (character, system, action) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
                 window.open("https://translate.google.com/?hl=es&sl=la&tl=es&text=Sed%20fugit%20interea%2C%20fugit%20irreparabile%20tempus&op=translate", "_blank");
                 system.doLink("llaves");
             }
@@ -81,6 +87,7 @@ undum.game.situations = {
         </p>", {
         actions: {
             'llave': function (character, system, action) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
                 system.setQuality("llave", true);
             },
             'entrar': function (character, system, action) {
@@ -117,8 +124,13 @@ undum.game.situations = {
         <li><a href='edadantigua'> Edad Antigua </a></li>\
         <li><a href='edadmedia'> Edad Media </a></li>\
         <li><a href='edadmoderna'> Edad Moderna </a></li>\
-        <li><a href='edadcontemporanea'> Edad Contemporanea </a></li>\ </p>"
-
+        <li><a href='edadcontemporanea'> Edad Contemporanea </a></li>\ </p>", {
+        enter: function (character, system, from) {
+            if (cont == 6) {
+                system.doLink("fin");
+            }
+        }
+    }
     ),
 
     eramesozoica: new undum.SimpleSituation(
@@ -130,7 +142,16 @@ undum.game.situations = {
        Ahora la sociedad del presente convive con velocirraptores gracias a ti, durante unas décadas, ellos fueron nuestro mejor medio de transporte y evitaste la contaminación que los restantes medios de transporte provocan al medio.\
        No obstante, ellos también evolucionaron y descubrieron que la carne humana era todo un manjar, por tu culpa la especie humana se extinguió allá por 2089. Corre, viaja a otro momento para evitar la extinción de la especie humana.\
        <a href='portalaux'> Vuelve al portal. </a>\
-       </p>"
+       </p>", {
+        enter: function (character, system, from) {
+            if (visitado[0] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[0] = true;
+                cont++;
+            }
+        }
+    }
+
     ),
 
     prehistoria: new undum.SimpleSituation(
@@ -140,7 +161,15 @@ undum.game.situations = {
         Esperabas encontrarte con tribus de homínidos caníbales y bárbaros, pero en lugar de esto, descubres un lugar que pasaría desapercibido en la famosa villa de Hobbiton, situada en la Comarca.\
         Estos homínidos resultan ser los Homo Floresiensis, también conocidos por parecer hobbits. Aunque tenian una peculiaridad reseñable, vivían en sociedad y se alimentaban de las flores allí nacidas,\
         igual es por esto que su tamaño no pasaba de un metro de altura y 25 kilogramos de peso. ¡Has descubierto que parte de nuestros antepasados homínidos eran veganos!.\
-        <a href='portalaux'> Vuelve al portal. </a></p>"
+        <a href='portalaux'> Vuelve al portal. </a></p>", {
+        enter: function (character, system, from) {
+            if (visitado[1] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[1] = true;
+                cont++;
+            }
+        }
+    }
 
     ),
 
@@ -154,7 +183,15 @@ undum.game.situations = {
         alcohol bueno, de ese que solías tomar en Kharma y en tus fiestas en Praga y por si fuera poco, tienes una máquina del tiempo.<br>\
         Has decidido llevarle vodka, Alejandro no puede estar más agradecido, admiró tanto ese brebaje que no supo cuando cesar de beber. Fue la biología la que le hizo parar, concretamente su corazón.\
         Mataste a Alejandro Magno, en consecuencia el vodka se considera una droga ilegal en todo el mundo. ¿De dónde salieron pues las botellas que el hegemón de Grecia bebió?\
-        <a href='portalaux'> Vuelve al portal. </a></p>"
+        <a href='portalaux'> Vuelve al portal. </a></p>", {
+        enter: function (character, system, from) {
+            if (visitado[2] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[2] = true;
+                cont++;
+            }
+        }
+    }
 
     ),
 
@@ -167,7 +204,15 @@ undum.game.situations = {
         <p class='dialogo'>- ¿Quién anda ahí? </p>Preguntais tu amigo Leo y tú al unísono.<p> Cuando sale del armario tu hermano pequeño, le preguntas:</p> <p class='dialogo'>- ¿Cómo has llegado tú aquí?</p> <p>Tu hermano solo quería hablar con el gran Da Vinci\
         para un trabajo de historia. Al parecer, dándole ese libro a una mente tan radiante, se inventó el automóvil siglos antes de lo que de no ser por ti habría sido y gracias a esto, en tu presente\
         existen los viajes en el espacio-tiempo como algo totalmente accesible y rutinario. No sabemos hasta qué punto es eso maravilloso...\
-        <a href='portalaux'> Vuelve al portal. </a></p>"
+        <a href='portalaux'> Vuelve al portal. </a></p>", {
+        enter: function (character, system, from) {
+            if (visitado[3] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[3] = true;
+                cont++;
+            }
+        }
+    }
     ),
 
     edadmoderna: new undum.SimpleSituation(
@@ -178,7 +223,15 @@ undum.game.situations = {
         que tú no eres precisamente un gran guerrero. Finalmente, recuerdas aquella pelea con tu mejor amigo, y cómo te disculpaste, ese kebab os supo a gloria y nunca más volvisteis a discutir.\
         Tenías que intentarlo, decides llevar kebabs a los altos cargos con la condición de que se sienten a hablar sobre lo ocurrido, ellos, obnubilados por la explosión de sabor en sus paladares,\
         deciden poner fin a esta guerra 241 años antes de lo previsto y apropiarse de esa magnífica comida que nombraron plato principal de su gastronomía nacional hasta hoy día.\
-        <a href='portalaux'> Vuelve al portal. </a></p>"
+        <a href='portalaux'> Vuelve al portal. </a></p>", {
+        enter: function (character, system, from) {
+            if (visitado[4] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[4] = true;
+                cont++;
+            }
+        }
+    }
     ),
 
     edadcontemporanea: new undum.SimpleSituation(
@@ -189,7 +242,20 @@ undum.game.situations = {
          Al parecer, no solo tú tuviste la idea de unirte, también lo hizo el glorioso Diego Armando Maradona, que no sabemos porqué, pero allí se hallaba.\
           Todo fue muy divertido hasta que conseguiste hacerle un caño al todopoderoso del fútbol, que no le resultó nada agradable, entrasteis en una pelea. \
           Por tu culpa los soldados recordaron sus misiones y volvieron a sus trincheras, acabaste con un precioso momento.\
-        <a href='portalaux'> Vuelve al portal. </a></p>"
+        <a href='portalaux'> Vuelve al portal. </a></p>", {
+        enter: function (character, system, from) {
+            if (visitado[5] == false) {
+                system.setQuality("progreso", character.qualities.progreso + 12.5);
+                visitado[5] = true;
+                cont++;
+            }
+        }
+    }
+    ),
+    fin: new undum.SimpleSituation(
+        "<h1>Fin</h1>\
+        <p>Has conseguido recorrer todos los posibles escenarios de la historia, y has descubierto una gran cantidad de cosas interesantes.</p>\
+        <h1>¡ENHORABUENA!</h1>"
     )
 
 };
@@ -198,7 +264,10 @@ undum.game.start = "start";
 
 undum.game.qualities = {
     llave: new undum.OnOffQuality(
-        "Llave", { priority: "0001", group: 'inventario' }
+        "Llave", { priority: "0001", group: 'inventario', onDisplay: "&#10003;" }
+    ),
+    progreso: new undum.NumericQuality(
+        "Progreso", { priority: "0001", group: 'inventario' }
     )
 };
 
@@ -208,5 +277,6 @@ undum.game.qualityGroups = {
 
 undum.game.init = function (character, system) {
     system.setQuality("llave", false)
+    character.qualities.progreso = 0;
     system.setCharacterText("<p>¡Comienzas tu fascinante aventura!</p>");
 };
