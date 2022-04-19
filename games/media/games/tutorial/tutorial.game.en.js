@@ -22,7 +22,8 @@ jQuery.fx.off = false
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>Praga</h1>\
-        <p> Te acabas de despertar en un callejón de la encantadora ciudad de Praga, aún desconocido para ti. Allí, una luz extraña se muestra ante tu presencia.\
+        <p> <img src='./media/img/praga.webp' class='float_right' width='300' height='200'>\
+        Te acabas de despertar en un callejón de la encantadora ciudad de Praga, aún desconocido para ti. Allí, una luz extraña se muestra ante tu presencia.\
         Tú, aún sufriendo las consecuencias de la noche anterior, no puedes evitar sentirte atraído por ella y decides acercarte. \
         El misterio no para de acrecentarse cuando en latín pone en la puerta de donde nace la luz cegadora: \
         <br><i><center>Sed fugit interea, fugit irreparabile tempus.</center></i></br></p>\
@@ -40,7 +41,8 @@ undum.game.situations = {
 
     llaves: new undum.SimpleSituation(
         "<h1>LLaves</h1>\
-        <p> Gracias a la generosa traducción de Google, has llegado a la conclusión de que estás ante un portal espacio-temporal que te permitirá viajar\
+        <p> <img src='./media/img/llave.png' class='float_right' width='300' height='200'>\
+        Gracias a la generosa traducción de Google, has llegado a la conclusión de que estás ante un portal espacio-temporal que te permitirá viajar\
         a través del tiempo y el espacio. Tristemente, no todo es tan fácil, para conseguirlo necesitarás encontrar la llave que lo abra.\
         Ve a buscar la llave a <a href='torrepolvora'> la Torre de la Pólvora</a> o <a href='museolego'> al museo Lego</a>. \
         </p>"
@@ -48,28 +50,32 @@ undum.game.situations = {
 
     torrepolvora: new undum.SimpleSituation(
         "<h1>Torre de la Pólvora</h1>\
-        <p> Te encuentras en la Torre de la Pólvora, una de las más grandes de la ciudad. \
+        <p> <img src='./media/img/torre.jpg' class='float_right' width='300' height='200'> \
+        Te encuentras en la Torre de la Pólvora, una de las más grandes de la ciudad. \
         En la entrada, unos transeúntes te piden que les saques una foto con la Torre; al hacerlo, te da tiempo a visualizar la belleza de la torre que ante ti se alza.\
         Igualmente, aquí no vas a encontrar la llave. Prueba en <a href='museolego'> el museo lego</a>. </p>"
     ),
 
     museolego: new undum.SimpleSituation(
         "<h1>Museo Lego</h1>\
-        <p> Te encuentras en el Museo Lego, pasas un buen rato fascinado por aquel mundo compuesto por bloquecitos de colores. Realmente \
+        <p> <img src='./media/img/lego.jpg' class='float_right' width='300' height='200'>\
+        Te encuentras en el Museo Lego, pasas un buen rato fascinado por aquel mundo compuesto por bloquecitos de colores. Realmente \
         es un museo digno de visitar. Tristemente, no es eso lo que te acontece aquí y durante tu visita tampoco has divisado la misteriosa llave.\
         Tras este desengaño, decides: <a href='rendirse'>rendirte</a>, o <a href='mirardetalladamente'> mirar detalladamente. </a></p>"
     ),
 
     rendirse: new undum.SimpleSituation(
         "<h1>Rendición</h1>\
-        <p> Tras una larga y desesperada busqueda, no encuentras la llave. \
+        <p> <img src='./media/img/rendicion.jpg' class='float_right' width='300' height='200'>\
+        Tras una larga y desesperada busqueda, no encuentras la llave. \
         Te quedas con la sensación de que no hay nada que hacer y tomas la mísera decisión de abandonar. Ya nunca conocerás los misterios del universo de tu propia mano.\
        <h1>FIN</h1></p>"
     ),
 
     mirardetalladamente: new undum.SimpleSituation(
         "<h1>Mirar Detalladamente</h1>\
-        <p> Sabia decisión la de mirar detalladamente ha sido. Tras una larga y agotadora busqueda, descubres un brillo desentonando entre el admirado \
+        <p> <img src='./media/img/detalladamente.jpg' class='float_right' width='300' height='200'> \
+        Sabia decisión la de mirar detalladamente ha sido. Tras una larga y agotadora busqueda, descubres un brillo desentonando entre el admirado \
         <i>Halcón Milenario</i>. ¡Sí! Es la llave, lo conseguiste. Tus increíbles dotes de detective y tu incansable lucha te han abierto el portal para descubrir el universo.\
         <a href='./llave'>coge la llave </a> y  <a href='./entrar'> ve al portal. </a>\
         </p>", {
@@ -91,7 +97,8 @@ undum.game.situations = {
 
     portal: new undum.SimpleSituation(
         "<h1>Portal</h1>\
-        <p>El portal, una vez usas la llave, se abre ante ti dándote numerosas opciones:\
+        <p><img src='./media/img/tardis.webp' class='float_right' width='300' height='200'>\
+        El portal, una vez usas la llave, se abre ante ti dándote numerosas opciones:\
         <li><a href='eramesozoica'> Era Mesozoica </a></li>\
         <li><a href='prehistoria'> Prehistoria </a></li>\
         <li><a href='edadantigua'> Edad Antigua </a></li>\
@@ -103,7 +110,8 @@ undum.game.situations = {
 
     portalaux: new undum.SimpleSituation(
         "<h1>Portal</h1>\
-        <p>Has vuelto al portal, escoge un nuevo escenario: \
+        <p><img src='./media/img/tardis.webp' class='float_right' width='300' height='200'>\
+        Has vuelto al portal, escoge un nuevo escenario: \
         <br><li><a href='eramesozoica'> Era Mesozoica </a></li>\
         <li><a href='prehistoria'> Prehistoria </a></li>\
         <li><a href='edadantigua'> Edad Antigua </a></li>\
@@ -115,7 +123,8 @@ undum.game.situations = {
 
     eramesozoica: new undum.SimpleSituation(
         "<h1>Era Mesozoica</h1>\
-       <p>Has escogido conocer a los dinosaurios, una vez allí, quedas encantado con el paisaje aún sin contaminación y la forma de vida de estos animales.\
+       <p><img src='./media/img/mesozoica.webp' class='float_right' width='400' height='200'>\
+       Has escogido conocer a los dinosaurios, una vez allí, quedas encantado con el paisaje aún sin contaminación y la forma de vida de estos animales.\
        Tristemente, sabes que en unos años morirán debido al meteorito que impactó contra el planeta Tierra, dejando una atmósfera contaminada y un cráter denominado Chicxulub.\
        No puedes evitar pensar en lo trágico que eso sería, y en un arrebato de adrenalina, decides tomar un pequeño grupo de velocirraptores bebés y llevarlos al futuro, evitando así su total extinción.\
        Ahora la sociedad del presente convive con velocirraptores gracias a ti, durante unas décadas, ellos fueron nuestro mejor medio de transporte y evitaste la contaminación que los restantes medios de transporte provocan al medio.\
@@ -126,7 +135,8 @@ undum.game.situations = {
 
     prehistoria: new undum.SimpleSituation(
         "<h1>Prehistoria</h1>\
-        <p>Gran elección, quieres sabes si los libros de historia y los documentales de la 2 te mienten sobre esta época tan lejana. Estás en Indonesia, concretamente en Isla de Flores\
+        <p><img src='./media/img/prehistoria.jpg' class='float_right' width='400' height='200'>\
+        Gran elección, quieres sabes si los libros de historia y los documentales de la 2 te mienten sobre esta época tan lejana. Estás en Indonesia, concretamente en Isla de Flores\
         Esperabas encontrarte con tribus de homínidos caníbales y bárbaros, pero en lugar de esto, descubres un lugar que pasaría desapercibido en la famosa villa de Hobbiton, situada en la Comarca.\
         Estos homínidos resultan ser los Homo Floresiensis, también conocidos por parecer hobbits. Aunque tenian una peculiaridad reseñable, vivían en sociedad y se alimentaban de las flores allí nacidas,\
         igual es por esto que su tamaño no pasaba de un metro de altura y 25 kilogramos de peso. ¡Has descubierto que parte de nuestros antepasados homínidos eran veganos!.\
@@ -136,7 +146,8 @@ undum.game.situations = {
 
     edadantigua: new undum.SimpleSituation(
         "<h1>Edad Antigua</h1>\
-        <p>Estás en la famosa metrópoli de Alejandría, decides pasear para ver qué te depara el destino aquí en el año 323 a.C. Ves una tasca con apariencia lujosa y decides entrar, al fondo hay un grupo de señores entre los que\
+        <p><img src='./media/img/antigua.png' class='float_right' width='300' height='200'>\
+        Estás en la famosa metrópoli de Alejandría, decides pasear para ver qué te depara el destino aquí en el año 323 a.C. Ves una tasca con apariencia lujosa y decides entrar, al fondo hay un grupo de señores entre los que\
         se encuentra un rostro que por alguna razón te resulta familiar, es el formidable Alejandro Magno, rey de Macedonia, hegemón de Grecia, faraón de Egipto, Gran rey de Media y Persia y fundador de aquella encantadora ciudad.\
         Como bien suele decirse, las cosas de palacio van despacio, así que ahí estaba él, bebiendo y resolviendo tranquilamente sus conflictos de estado. Consigues acercarte y tomas una copa de vino con él, ese que tanto le gusta, pero\
         a ti de disgustaba enormemente, no comprendes cómo alguien de su compustura bebía algo tan desagradable. <br> Pensándolo fríamente, decides que un hombre de tal grandeza merece tomar\
@@ -149,10 +160,11 @@ undum.game.situations = {
 
     edadmedia: new undum.SimpleSituation(
         "<h1>Edad Media</h1>\
-        <p>Has llegado a Florencia en su época de máximo esplendor renacentista, todo un lujo. Se te ocurre una idea para cambiar el presente y contribuir al desarrollo de la humanidad, decides\
+        <p><img src='./media/img/media.jpg' class='float_right' width='255' height='300'>\
+        Has llegado a Florencia en su época de máximo esplendor renacentista, todo un lujo. Se te ocurre una idea para cambiar el presente y contribuir al desarrollo de la humanidad, decides\
         llevarle al ingenioso artista Leonardo Da Vinci, un libro con la explicación detallada de la fabricación de un coche moderno, qué osadia por tu parte. Él, te lo agradece aún sin comprender\
         qué era eso exactamente, decidiste ayudarle a desentrañar ese extraño libro con tu casi nulo conocimiento de mecánica. De repente ocurre algo inesperado, un golpe en el armario del anfitrión.\
-        ¿Quién anda ahí? Preguntais tu amigo Leo y tú al unísono. Cuando sale del armario tu hermano pequeño, ¿cómo has llegado tú aquí?, preguntas. Tu hermano solo quería hablar con el gran Da Vinci\
+        <p class='dialogo'>- ¿Quién anda ahí? </p>Preguntais tu amigo Leo y tú al unísono.<p> Cuando sale del armario tu hermano pequeño, le preguntas:</p> <p class='dialogo'>- ¿Cómo has llegado tú aquí?</p> <p>Tu hermano solo quería hablar con el gran Da Vinci\
         para un trabajo de historia. Al parecer, dándole ese libro a una mente tan radiante, se inventó el automóvil siglos antes de lo que de no ser por ti habría sido y gracias a esto, en tu presente\
         existen los viajes en el espacio-tiempo como algo totalmente accesible y rutinario. No sabemos hasta qué punto es eso maravilloso...\
         <a href='portalaux'> Vuelve al portal. </a></p>"
@@ -160,7 +172,8 @@ undum.game.situations = {
 
     edadmoderna: new undum.SimpleSituation(
         "<h1>Edad Moderna</h1>\
-        <p>Has llegado hasta los Balcanes en el año 1550, donde se está aconteciendo la guerra habsburgo-otomana. En la que participan la dinastía de Habsburgo y el imperio Otomano.\
+        <p><img src='./media/img/moderna.webp' class='float_right' width='300' height='200'>\
+        Has llegado hasta los Balcanes en el año 1550, donde se está aconteciendo la guerra habsburgo-otomana. En la que participan la dinastía de Habsburgo y el imperio Otomano.\
         Esta guerra duraría unos 270 años dejando miles y miles de muertos a su paso. Estar ahí te hacía sentir partícipe de la atrocidad de la guerra, quieres ayudar, pero a la vista está\
         que tú no eres precisamente un gran guerrero. Finalmente, recuerdas aquella pelea con tu mejor amigo, y cómo te disculpaste, ese kebab os supo a gloria y nunca más volvisteis a discutir.\
         Tenías que intentarlo, decides llevar kebabs a los altos cargos con la condición de que se sienten a hablar sobre lo ocurrido, ellos, obnubilados por la explosión de sabor en sus paladares,\
@@ -170,7 +183,8 @@ undum.game.situations = {
 
     edadcontemporanea: new undum.SimpleSituation(
         "<h1>Edad Contemporanea</h1>\
-        <p>Estás en el frente occidental, contemplando la conocida tregua de navidad que data de la primera guerra mundial. Un momento tan mágico como solo la navidad puede serlo en el que soldados alemanes\
+        <p><img src='./media/img/contemporanea.webp' class='float_right' width='300' height='200'>\
+        Estás en el frente occidental, contemplando la conocida tregua de navidad que data de la primera guerra mundial. Un momento tan mágico como solo la navidad puede serlo en el que soldados alemanes\
          y británicos olvidaron sus diferencias tras la trinchera para cantar villancicos y jugar al fútbol como compañeros. Dado un momento tan tierno, decides unirte a ellos, te apetece una partidilla.\
          Al parecer, no solo tú tuviste la idea de unirte, también lo hizo el glorioso Diego Armando Maradona, que no sabemos porqué, pero allí se hallaba.\
           Todo fue muy divertido hasta que conseguiste hacerle un caño al todopoderoso del fútbol, que no le resultó nada agradable, entrasteis en una pelea. \
