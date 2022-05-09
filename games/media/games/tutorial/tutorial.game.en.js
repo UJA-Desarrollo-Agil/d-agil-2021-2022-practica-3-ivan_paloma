@@ -25,7 +25,7 @@ var cont = 0;
 
 var nombre="Link";
 var aux;
-aux=prompt("Introduzca un nombre masculino para el personaje:");
+aux=prompt("Introduzca un nombre para el personaje:");
 
 if(aux!=null && aux!=""){
 	nombre=aux;
