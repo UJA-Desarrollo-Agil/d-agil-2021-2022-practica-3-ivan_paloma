@@ -1,5 +1,5 @@
 body {
-    background: #170804 url("../img/page_bg.jpg") repeat-x left top;
+    background: url("../img/prueba.jpg") left top;
     font-family: Palatino, Times, "Times New Roman", serif;
     font-size: 18px;
     line-height: 1.6em;
@@ -22,7 +22,7 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../img/prueba1.jpg") repeat -1.1em -1.1em;
+    background: #e6e6c6 url("../img/nombre3.jpg") repeat -1.1em -1.1em;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
     border: 1.1em solid rgba(0,0,0,0.25);
@@ -59,9 +59,9 @@ body {
     margin: 1.1em 0 0 0;
 }
 #title h1, #title h2, #title h3 {
-    color: rgba(33,17,0,0.9);
-    text-shadow: rgba(255,255,255,0.5) 2px 2px 2px,
-    rgba(0,0,0,0.1) -1px -1px 2px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgba(224, 208, 208, 0.5) 2px 2px 2px,
+    rgb(212, 245, 231) -1px -1px 2px;
 }
 #title h1 span.fancy {
     font-size: 2.5em;

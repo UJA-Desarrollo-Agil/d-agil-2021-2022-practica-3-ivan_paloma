@@ -23,6 +23,15 @@ var visitado = new Array(numEdades).fill(false);
 
 var cont = 0;
 
+var nombre="Link";
+var aux;
+aux=prompt("Introduzca un nombre masculino para el personaje:");
+
+if(aux!=null && aux!=""){
+	nombre=aux;
+} 
+
+
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
@@ -201,8 +210,10 @@ undum.game.situations = {
         Has llegado a Florencia en su época de máximo esplendor renacentista, todo un lujo. Se te ocurre una idea para cambiar el presente y contribuir al desarrollo de la humanidad, decides\
         llevarle al ingenioso artista Leonardo Da Vinci, un libro con la explicación detallada de la fabricación de un coche moderno, qué osadia por tu parte. Él, te lo agradece aún sin comprender\
         qué era eso exactamente, decidiste ayudarle a desentrañar ese extraño libro con tu casi nulo conocimiento de mecánica. De repente ocurre algo inesperado, un golpe en el armario del anfitrión.\
-        <p class='dialogo'>- ¿Quién anda ahí? </p>Preguntais tu amigo Leo y tú al unísono.<p> Cuando sale del armario tu hermano pequeño, le preguntas:</p> <p class='dialogo'>- ¿Cómo has llegado tú aquí?</p> <p>Tu hermano solo quería hablar con el gran Da Vinci\
-        para un trabajo de historia. Al parecer, dándole ese libro a una mente tan radiante, se inventó el automóvil siglos antes de lo que de no ser por ti habría sido y gracias a esto, en tu presente\
+        <p class='dialogo'>- ¿Quién anda ahí? </p>Preguntais tu amigo Leo y tú al unísono.<p> Cuando sale del armario tu hermano pequeño, le preguntas:</p> <p class='dialogo'>- ¿Cómo has llegado tú aquí?</p> <p class='dialogo'>- ¿Qué hay "+ nombre +"?  \
+        Solo venía a hablar con el gran Da Vinci\
+        para un trabajo de historia. </p>\
+        <p>Al parecer, dándole ese libro a una mente tan radiante, se inventó el automóvil siglos antes de lo que de no ser por ti habría sido y gracias a esto, en tu presente\
         existen los viajes en el espacio-tiempo como algo totalmente accesible y rutinario. No sabemos hasta qué punto es eso maravilloso...\
         <a href='portalaux'> Vuelve al portal. </a></p>", {
         enter: function (character, system, from) {
