@@ -144,8 +144,9 @@ undum.game.situations = {
 
     eramesozoica: new undum.SimpleSituation(
         "<h1>Era Mesozoica</h1>\
-       <p><img src='./media/img/mesozoica.webp' class='float_right' width='400' height='200'>\
-       Has escogido conocer a los dinosaurios, una vez allí, quedas encantado con el paisaje aún sin contaminación y la forma de vida de estos animales.\
+       <p><div align='centre'><video src='./media/img/Dinos.mp4' width='400' height='200' autoplay muted ></video></div> </p>\
+       <p> </p>\
+       <p>Has escogido conocer a los dinosaurios, una vez allí, quedas encantado con el paisaje aún sin contaminación y la forma de vida de estos animales.\
        Tristemente, sabes que en unos años morirán debido al meteorito que impactó contra el planeta Tierra, dejando una atmósfera contaminada y un cráter denominado Chicxulub.\
        No puedes evitar pensar en lo trágico que eso sería, y en un arrebato de adrenalina, decides tomar un pequeño grupo de velocirraptores bebés y llevarlos al futuro, evitando así su total extinción.\
        Ahora la sociedad del presente convive con velocirraptores gracias a ti, durante unas décadas, ellos fueron nuestro mejor medio de transporte y evitaste la contaminación que los restantes medios de transporte provocan al medio.\
