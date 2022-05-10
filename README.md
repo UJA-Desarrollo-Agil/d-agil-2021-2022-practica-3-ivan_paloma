@@ -122,11 +122,11 @@ A pesar de ser un grupo de solo dos personas, no hemos tenido ningún inconvenie
 ## Capturas Trello del segundo sprint
 
 ### Inicial con las Historias de Usuario escogidas
- <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu_sprint2.PNG" alt="cap1" style="max-width: 100%;">
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu_sprint2.png" alt="cap1" style="max-width: 100%;">
 Las historias de usuario escogidas en este sprint han sido aquellas que tenían un valor relativo para el usuario y no excesivamente complejas de implementar
 
 ### HU tras el Sprint Refinement
- <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/refinement2.PNG" alt="cap1" style="max-width: 100%;">
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/refinement2.png" alt="cap1" style="max-width: 100%;">
  
 ### Captura final
  <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/final2.PNG" alt="cap1" style="max-width: 100%;">
