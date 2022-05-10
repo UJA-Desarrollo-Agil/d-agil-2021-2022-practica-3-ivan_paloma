@@ -57,6 +57,9 @@ Una aventura espacio-temporal
 # URL del tablero Trello<a name="i3"></a>
 La URL del tablero es: https://trello.com/b/810nSWvK/pr%C3%A1ctica-3
 
+# URL del juego subido a una página web
+La URL es: https://uja-desarrollo-agil.github.io/d-agil-2021-2022-practica-3-ivan_paloma/
+
 # Capturas de pantalla del tablero en Trello<a name="i4"></a>
 
  <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/Captura%201.png" alt="cap1" style="max-width: 100%;">
