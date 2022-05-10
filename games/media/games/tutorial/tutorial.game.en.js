@@ -82,7 +82,7 @@ undum.game.situations = {
     rendirse: new undum.SimpleSituation(
         "<h1>Rendición</h1>\
         <p> <img src='games/media/img/rendicion.jpg' class='float_right' width='300' height='200'>\
-        Tras una larga y desesperada busqueda, no encuentras la llave. \
+        Tras una larga y desesperada búsqueda, no encuentras la llave. \
         Te quedas con la sensación de que no hay nada que hacer y tomas la mísera decisión de abandonar. Ya nunca conocerás los misterios del universo de tu propia mano.\
        <h1>FIN</h1></p>"
     ),
@@ -167,7 +167,7 @@ undum.game.situations = {
     prehistoria: new undum.SimpleSituation(
         "<h1>Prehistoria</h1>\
         <p><img src='games/media/img/prehistoria.jpg' class='float_right' width='400' height='200'>\
-        Gran elección, quieres sabes si los libros de historia y los documentales de la 2 te mienten sobre esta época tan lejana. Estás en Indonesia, concretamente en Isla de Flores\
+        Gran elección, quieres sabes si los libros de historia y los documentales de la 2 te mienten sobre esta época tan lejana. Estás en Indonesia, concretamente en Isla de Flores.\
         Esperabas encontrarte con tribus de homínidos caníbales y bárbaros, pero en lugar de esto, descubres un lugar que pasaría desapercibido en la famosa villa de Hobbiton, situada en la Comarca.\
         Estos homínidos resultan ser los Homo Floresiensis, también conocidos por parecer hobbits. Aunque tenian una peculiaridad reseñable, vivían en sociedad y se alimentaban de las flores allí nacidas,\
         igual es por esto que su tamaño no pasaba de un metro de altura y 25 kilogramos de peso. ¡Has descubierto que parte de nuestros antepasados homínidos eran veganos!.\
@@ -189,7 +189,7 @@ undum.game.situations = {
         Estás en la famosa metrópoli de Alejandría, decides pasear para ver qué te depara el destino aquí en el año 323 a.C. Ves una tasca con apariencia lujosa y decides entrar, al fondo hay un grupo de señores entre los que\
         se encuentra un rostro que por alguna razón te resulta familiar, es el formidable Alejandro Magno, rey de Macedonia, hegemón de Grecia, faraón de Egipto, Gran rey de Media y Persia y fundador de aquella encantadora ciudad.\
         Como bien suele decirse, las cosas de palacio van despacio, así que ahí estaba él, bebiendo y resolviendo tranquilamente sus conflictos de estado. Consigues acercarte y tomas una copa de vino con él, ese que tanto le gusta, pero\
-        a ti de disgustaba enormemente, no comprendes cómo alguien de su compustura bebía algo tan desagradable. <br> Pensándolo fríamente, decides que un hombre de tal grandeza merece tomar\
+        a ti de disgustaba enormemente, no comprendes cómo alguien de su compostura bebía algo tan desagradable. <br> Pensándolo fríamente, decides que un hombre de tal grandeza merece tomar\
         alcohol bueno, de ese que solías tomar en Kharma y en tus fiestas en Praga y por si fuera poco, tienes una máquina del tiempo.<br>\
         Has decidido llevarle vodka, Alejandro no puede estar más agradecido, admiró tanto ese brebaje que no supo cuando cesar de beber. Fue la biología la que le hizo parar, concretamente su corazón.\
         Mataste a Alejandro Magno, en consecuencia el vodka se considera una droga ilegal en todo el mundo. ¿De dónde salieron pues las botellas que el hegemón de Grecia bebió?\
