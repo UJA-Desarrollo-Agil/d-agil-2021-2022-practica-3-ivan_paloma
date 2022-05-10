@@ -17,6 +17,7 @@
  6. [Capturas de pantalla del tablero en Trello](#i4)
  7. [Capturas de pantalla del bot en Telegram](#i7)
  8. [Sprint Primero](#i8)
+ 9. [Sprint Segundo](#i9)
 
 # Introducción<a name="i5"></a>
 En esta práctica se nos ha propuesto crear un juego conversacional con Undum. Para ello, hemos narrado una historia con finales alternativos, dependiendo de las elecciones del jugador. En este Sprint será descrito el juego y se establecerán distintas historias de usuario asignándoles una descripción, valor asociado, puntos de historia (dificultad a la hora de implementarla) y criterios de valoración, con los que se determinarán cuándo una historia de usuario ha sido satisfecha. Para evaluar las características anteriores, hemos llevado a cabo la actividad conocida como "Planning Poker" en cuyo caso se ha utilizado una escala personalizada que se mostrará a continuación:
@@ -42,7 +43,16 @@ En este juego eres un personaje que por alguna inhóspita razón ha violado toda
 Una aventura espacio-temporal
 
 # Escenarios<a name="i2"></a>
-
+* PRAGA: Aquí comienza tu historia
+* TORRE DE LA PÓLVORA: Es un emblema de la ciudad de Praga por el que has de pasar
+* MUSEO LEGO: ¿Quién no quiere ir al museo Lego?
+* PORTAL: Un enorme viaje te espera en este misterioso lugar
+* ERA MESOZOICA: En ella podrás ver dinosaurios, cómo no
+* PREHISTORIA: Aprenderás sobre nuestros orígenes homínidos
+* EDAD ANTIGUA: Conocerás a Alejandro Magno 
+* EDAD MEDIA: Conocerás a Leonardo Da Vinci
+* EDAD MODERNA: Pararás una guerra Habsburgo-Otomana
+* EDAD CONTEMPORANEA: Conocerás a Diego Armando Maradona
 
 # URL del tablero Trello<a name="i3"></a>
 La URL del tablero es: https://trello.com/b/810nSWvK/pr%C3%A1ctica-3
@@ -65,9 +75,18 @@ La URL del tablero es: https://trello.com/b/810nSWvK/pr%C3%A1ctica-3
 <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/Captura%2011.png" alt="cap1" style="max-width: 100%;">
 <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/Captura%2012.png" alt="cap1" style="max-width: 100%;">
 
-# Capturas de pantalla del bot en Telegram<a name="i7"></a>
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu1.png" alt="cap1" style="max-width: 100%;">
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu2.png" alt="cap1" style="max-width: 100%;">
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu3.png" alt="cap1" style="max-width: 100%;">
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu4.png" alt="cap1" style="max-width: 100%;">
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu5.png" alt="cap1" style="max-width: 100%;">
 
+# Capturas de pantalla del bot en Telegram<a name="i7"></a>
+* Primer Sprint
 <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/Captura%2013.png" alt="cap1" style="max-width: 100%;">
+
+* Segundo Sprint
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/telegram2.png" alt="cap1" style="max-width: 100%;">
 
 # Sprint Primero<a name="i8"></a>
 ## Capturas Trello del primer sprint
@@ -98,3 +117,38 @@ Otro punto a mejorar es el uso de GitHub, sabemos trabajar en distintas ramas y 
 
 Hemos logrado completar más historias de usuario de las que creíamos que nos iba a dar tiempo a mitad del sprint, pensábamos que igual habíamos sido demasiado optimistas al escoger que historias de usuario se realizarían en dicho sprint.
 A pesar de ser un grupo de solo dos personas, no hemos tenido ningún inconveniente, especialmente porque las reuniones eran mucho más cortas y tranquilas, y era muy fácil controlar las historias de usuario que se estaban llevando a cabo y su progreso.
+
+# Sprint Segundo<a name="i9"></a>
+## Capturas Trello del segundo sprint
+
+### Inicial con las Historias de Usuario escogidas
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/hu_sprint2.PNG" alt="cap1" style="max-width: 100%;">
+Las historias de usuario escogidas en este sprint han sido aquellas que tenían un valor relativo para el usuario y no excesivamente complejas de implementar
+
+### HU tras el Sprint Refinement
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/refinement2.PNG" alt="cap1" style="max-width: 100%;">
+ 
+### Captura final
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/final2.PNG" alt="cap1" style="max-width: 100%;">
+
+## Sprint Review
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/tabla2.png" alt="cap1" style="max-width: 100%;">
+En este sprint hemos conseguido implementar todas las historias de usuario propuestas, aunque el tiempo no ha estado perfectamente repartido a lo largo de las semanas. No obstante, logramos implementar las historias de usuario planeadas. 
+Con respecto al Sprint Refinement, tuvimos que contar con una nueva historia de usuario urgente e innegociable para el cliente, que ciertamente, no costó mucho esfuerzo realizar.
+De cara al segundo sprint planeanos acabar las historias de usuario restantes del product backlog y mejorar la estética y de ser necesario, alguna escena.
+
+## Sprint Retrospective
+* Aspectos a mejorar en el próximo sprint
+
+Seguimos teniendo que mejorar con el uso de GitHub, sabemos trabajar en distintas ramas y unirlas después, pero cuando trabajamos en diferido y queremos juntarlas, tenemos cierto miedo a perder el contenido de alguna rama por culpa de los conflictos que pudieren surgir entre las distintas ramas.
+La historia de usuario número 8 (subir el juego a un sitio web) ha sido más costosa de lo que inicialmente pensábamos; no obstante, conseguimos implementarla.
+También es cierto que en este sprint no hemos añadido muchas historias de usuario nuevas, tal vez podríamos haber añadido alguna más que sume valor para el usuario.
+
+* Aspectos positivos de este sprint
+
+En este sprint corregimos el error de ceñirnos a detalles estéticos y priorizamos las historias de usuario y en consecuencia tuvimos más tiempo para todo. 
+Al haber añadido pocas historias de usuario nuevas para este sprint hemos logrado repartir mejor el tiempo e implementar todo en un tiempo considerable.
+A pesar de ser un grupo de solo dos personas, no hemos tenido ningún inconveniente, especialmente porque las reuniones eran mucho más cortas y tranquilas, y era muy fácil controlar las historias de usuario que se estaban llevando a cabo y su progreso.
+
+
+
