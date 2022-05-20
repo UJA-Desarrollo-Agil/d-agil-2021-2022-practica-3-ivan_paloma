@@ -18,6 +18,7 @@
  7. [Capturas de pantalla del bot en Telegram](#i7)
  8. [Sprint Primero](#i8)
  9. [Sprint Segundo](#i9)
+ 10. [Métricas](#i10)
 
 # Introducción<a name="i5"></a>
 En esta práctica se nos ha propuesto crear un juego conversacional con Undum. Para ello, hemos narrado una historia con finales alternativos, dependiendo de las elecciones del jugador. En este Sprint será descrito el juego y se establecerán distintas historias de usuario asignándoles una descripción, valor asociado, puntos de historia (dificultad a la hora de implementarla) y criterios de valoración, con los que se determinarán cuándo una historia de usuario ha sido satisfecha. Para evaluar las características anteriores, hemos llevado a cabo la actividad conocida como "Planning Poker" en cuyo caso se ha utilizado una escala personalizada que se mostrará a continuación:
@@ -152,6 +153,13 @@ También es cierto que en este sprint no hemos añadido muchas historias de usua
 En este sprint corregimos el error de ceñirnos a detalles estéticos y priorizamos las historias de usuario y en consecuencia tuvimos más tiempo para todo. 
 Al haber añadido pocas historias de usuario nuevas para este sprint hemos logrado repartir mejor el tiempo e implementar todo en un tiempo considerable.
 A pesar de ser un grupo de solo dos personas, no hemos tenido ningún inconveniente, especialmente porque las reuniones eran mucho más cortas y tranquilas, y era muy fácil controlar las historias de usuario que se estaban llevando a cabo y su progreso.
+
+# Métricas<a name="i9"></a>
+
+## Tabla del proyecto global
+## Gráfica Burn-down 
+## Gráfica Burn-up
+
 
 
 
