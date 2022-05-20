@@ -157,9 +157,11 @@ A pesar de ser un grupo de solo dos personas, no hemos tenido ningún inconvenie
 # Métricas<a name="i9"></a>
 
 ## Tabla del proyecto global
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/tablica.PNG" alt="cap1" style="max-width: 100%;">
 ## Gráfica Burn-down 
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/burndown.PNG" alt="cap1" style="max-width: 100%;">
 ## Gráfica Burn-up
-
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-ivan_paloma/blob/master/games/media/img/burnup.PNG" alt="cap1" style="max-width: 100%;">
 
 
 
